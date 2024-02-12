@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_dec/utils/color_constants.dart';
 import 'package:netflix_dec/utils/database.dart';
 import 'package:netflix_dec/utils/image_constants.dart';
+import 'package:netflix_dec/view/bottom_nav_screen/bottom_nav_screen.dart';
+import 'package:netflix_dec/view/home_screen/home_screen.dart';
 
 class UserNameScreen extends StatelessWidget {
   const UserNameScreen({super.key});
@@ -42,7 +44,14 @@ class UserNameScreen extends StatelessWidget {
             itemBuilder: (context, index) => index <
                     DbData.userNameImages.length
                 ? InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      // write code to navigate to home screen
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BottomNavScreen(),
+                          ));
+                    },
                     child: Column(
                       children: [
                         Container(
@@ -66,32 +75,37 @@ class UserNameScreen extends StatelessWidget {
                       ],
                     ),
                   )
-                : Column(
-                    children: [
-                      SizedBox(
-                        height: 100,
-                        width: 100,
-                        child: Center(
-                          child: Container(
-                            height: 50,
-                            width: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        ImageConstants.addButtonImage),
-                                    fit: BoxFit.cover)),
+                : InkWell(
+                    onTap: () {
+                      print("add user button clicked");
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 100,
+                          width: 100,
+                          child: Center(
+                            child: Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          ImageConstants.addButtonImage),
+                                      fit: BoxFit.cover)),
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "Add",
-                        style: TextStyle(color: ColorConstants.mainWhite),
-                      )
-                    ],
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Add",
+                          style: TextStyle(color: ColorConstants.mainWhite),
+                        )
+                      ],
+                    ),
                   ),
           ),
         ),
