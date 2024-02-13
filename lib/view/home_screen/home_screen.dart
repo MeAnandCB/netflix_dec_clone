@@ -145,7 +145,7 @@ class HomeScreen extends StatelessWidget {
             width: 100,
             title: "Preview",
             isCircular: true,
-            imagesList: DbData.movieImageUrls1,
+            imagesList: DbData.movieImageUrlsCircle,
           ),
           CustomMovieCards(
             title: "Continue Watching for ",
