@@ -140,6 +140,17 @@ class HomeScreen extends StatelessWidget {
           CustomMovieCards(
             title: "Continue Watching for ",
             imagesList: DbData.movieImageUrls,
+            isOptionsVisible: true,
+          ),
+          CustomMovieCards(
+            height: 251,
+            width: 154,
+            title: "Continue Watching for ",
+            imagesList: DbData.movieImageUrls,
+          ),
+          CustomMovieCards(
+            title: "Continue Watching for ",
+            imagesList: DbData.movieImageUrls,
           ),
         ],
       ),
