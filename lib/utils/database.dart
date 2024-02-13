@@ -44,4 +44,29 @@ class DbData {
     "https://i.pinimg.com/564x/aa/92/13/aa92130b5dcbb96bd933c40ae7d798e2.jpg",
     "https://i.pinimg.com/564x/5f/c5/7d/5fc57db5a5194c2eadb610955d389ea5.jpg"
   ];
+
+  static List<Map<String, String>> searchScreenDatas = [
+    {
+      "imageUrl": "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
+      "movieName": "The Social Network"
+    },
+    {
+      "imageUrl": "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
+      "movieName": "The Imitation Game"
+    },
+    {"imageUrl": "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg", "movieName": "Hackers"},
+    {"imageUrl": "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg", "movieName": "WarGames"},
+    {"imageUrl": "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg", "movieName": "Tron"},
+    {
+      "imageUrl": "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
+      "movieName": "The Social Network"
+    },
+    {
+      "imageUrl": "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
+      "movieName": "The Imitation Game"
+    },
+    {"imageUrl": "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg", "movieName": "Hackers"},
+    {"imageUrl": "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg", "movieName": "WarGames"},
+    {"imageUrl": "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg", "movieName": "Tron"}
+  ];
 }
