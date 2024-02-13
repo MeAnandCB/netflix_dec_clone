@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:netflix_dec/utils/color_constants.dart';
 
 class CustomMovieCards extends StatelessWidget {
@@ -12,12 +11,12 @@ class CustomMovieCards extends StatelessWidget {
     required this.imagesList,
     this.isOptionsVisible = false,
   });
-  final String title;
-  final double height;
-  final double width;
-  final bool isCircular;
-  final bool isOptionsVisible;
-  final List<String> imagesList;
+  final String title; // to get custom title to the custom widget
+  final double height; // to adjust the height of the listview and contanier
+  final double width; // to adjust the with of the contianer
+  final bool isCircular; // to make the container circular
+  final bool isOptionsVisible; // to show thw options on the bottom of the movie card
+  final List<String> imagesList; //  images urls list
 
   @override
   Widget build(BuildContext context) {
@@ -49,10 +48,11 @@ class CustomMovieCards extends StatelessWidget {
                         image: DecorationImage(image: NetworkImage(imagesList[index]), fit: BoxFit.cover)),
                     height: height,
                     width: width,
-                    alignment: Alignment.bottomCenter,
+                    // alignment: Alignment.bottomCenter,
                     child: Visibility(
                       visible: isOptionsVisible,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Container(
