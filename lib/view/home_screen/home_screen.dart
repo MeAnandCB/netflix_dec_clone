@@ -18,26 +18,32 @@ class HomeScreen extends StatelessWidget {
                 height: 430,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage(ImageConstants.homePageImage), fit: BoxFit.cover),
+                  image: DecorationImage(
+                      image: AssetImage(ImageConstants.homePageImage),
+                      fit: BoxFit.cover),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 15),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 35, horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Image.asset(ImageConstants.netflixSecondary),
                     Text(
                       "Tv Shows",
-                      style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17),
+                      style: TextStyle(
+                          color: ColorConstants.mainWhite, fontSize: 17),
                     ),
                     Text(
                       "Movies",
-                      style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17),
+                      style: TextStyle(
+                          color: ColorConstants.mainWhite, fontSize: 17),
                     ),
                     Text(
                       "My List",
-                      style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17),
+                      style: TextStyle(
+                          color: ColorConstants.mainWhite, fontSize: 17),
                     ),
                   ],
                 ),
@@ -56,7 +62,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Text(
                         "#2 in Nigeria today",
-                        style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17),
+                        style: TextStyle(
+                            color: ColorConstants.mainWhite, fontSize: 17),
                       ),
                     ],
                   ),
@@ -90,7 +97,9 @@ class HomeScreen extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                decoration: BoxDecoration(color: ColorConstants.mainGrey, borderRadius: BorderRadius.circular(6)),
+                decoration: BoxDecoration(
+                    color: ColorConstants.mainGrey,
+                    borderRadius: BorderRadius.circular(6)),
                 child: Row(
                   children: [
                     Icon(
@@ -102,7 +111,8 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Text(
                       "Play",
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                     )
                   ],
                 ),
@@ -135,22 +145,22 @@ class HomeScreen extends StatelessWidget {
             width: 100,
             title: "Preview",
             isCircular: true,
-            imagesList: DbData.movieImageUrls,
+            imagesList: DbData.movieImageUrls1,
           ),
           CustomMovieCards(
             title: "Continue Watching for ",
-            imagesList: DbData.movieImageUrls,
+            imagesList: DbData.movieImageUrls2,
             isOptionsVisible: true,
           ),
           CustomMovieCards(
             height: 251,
             width: 154,
             title: "Continue Watching for ",
-            imagesList: DbData.movieImageUrls,
+            imagesList: DbData.movieImageUrls1,
           ),
           CustomMovieCards(
             title: "Continue Watching for ",
-            imagesList: DbData.movieImageUrls,
+            imagesList: DbData.movieImageUrls1,
           ),
         ],
       ),
