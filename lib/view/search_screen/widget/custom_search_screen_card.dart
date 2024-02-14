@@ -25,9 +25,15 @@ class CustomSearchScreenCard extends StatelessWidget {
               ),
             ),
             SizedBox(width: 30),
-            Text(title),
+            Text(
+              title,
+              style: TextStyle(color: ColorConstants.mainWhite),
+            ),
             Spacer(),
-            Icon(Icons.play_circle_outline_outlined),
+            Icon(
+              Icons.play_circle_outline_outlined,
+              color: ColorConstants.mainWhite,
+            ),
             SizedBox(width: 20),
           ],
         ));

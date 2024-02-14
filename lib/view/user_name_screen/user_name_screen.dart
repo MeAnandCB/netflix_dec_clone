@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_dec/utils/color_constants.dart';
-import 'package:netflix_dec/utils/database.dart';
+import 'package:netflix_dec/utils/dummy_db.dart';
 import 'package:netflix_dec/utils/image_constants.dart';
 import 'package:netflix_dec/view/bottom_nav_screen/bottom_nav_screen.dart';
 import 'package:netflix_dec/view/home_screen/home_screen.dart';
@@ -35,14 +35,14 @@ class UserNameScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 60),
           child: GridView.builder(
             shrinkWrap: true,
-            itemCount: DbData.userNameImages.length + 1,
+            itemCount: DummyDb.userNameImages.length + 1,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               mainAxisSpacing: 5,
               crossAxisSpacing: 5,
             ),
             itemBuilder: (context, index) => index <
-                    DbData.userNameImages.length
+                    DummyDb.userNameImages.length
                 ? InkWell(
                     onTap: () {
                       // write code to navigate to home screen
@@ -62,14 +62,14 @@ class UserNameScreen extends StatelessWidget {
                               color: Colors.amber,
                               image: DecorationImage(
                                   image: AssetImage(
-                                      DbData.userNameImages[index]["image"]!),
+                                      DummyDb.userNameImages[index]["image"]!),
                                   fit: BoxFit.cover)),
                         ),
                         SizedBox(
                           height: 10,
                         ),
                         Text(
-                          DbData.userNameImages[index]["name"]!,
+                          DummyDb.userNameImages[index]["name"]!,
                           style: TextStyle(color: ColorConstants.mainWhite),
                         )
                       ],

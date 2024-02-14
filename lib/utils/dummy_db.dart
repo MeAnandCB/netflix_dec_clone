@@ -1,6 +1,6 @@
 import 'package:netflix_dec/utils/image_constants.dart';
 
-class DbData {
+class DummyDb {
   // map for username grid images
   static List<Map<String, String>> userNameImages = [
     {
@@ -47,26 +47,80 @@ class DbData {
 
   static List<Map<String, String>> searchScreenDatas = [
     {
-      "imageUrl": "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
+      "imageUrl":
+          "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
       "movieName": "The Social Network"
     },
     {
-      "imageUrl": "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
+      "imageUrl":
+          "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
       "movieName": "The Imitation Game"
     },
-    {"imageUrl": "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg", "movieName": "Hackers"},
-    {"imageUrl": "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg", "movieName": "WarGames"},
-    {"imageUrl": "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg", "movieName": "Tron"},
     {
-      "imageUrl": "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
+      "imageUrl":
+          "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg",
+      "movieName": "Hackers"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg",
+      "movieName": "WarGames"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg",
+      "movieName": "Tron"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/bd/dd/44/bddd4473c43ea93d6f362ab4d2aa1545.jpg",
       "movieName": "The Social Network"
     },
     {
-      "imageUrl": "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
+      "imageUrl":
+          "https://i.pinimg.com/564x/be/42/45/be4245afdd7fa145b532b453337a84e5.jpg",
       "movieName": "The Imitation Game"
     },
-    {"imageUrl": "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg", "movieName": "Hackers"},
-    {"imageUrl": "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg", "movieName": "WarGames"},
-    {"imageUrl": "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg", "movieName": "Tron"}
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/bb/91/7d/bb917d1fcafbcaca51cdb3756b2d03d3.jpg",
+      "movieName": "Hackers"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/9a/6a/2a/9a6a2aef98b281ac5b569d20d5b7dd38.jpg",
+      "movieName": "WarGames"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/df/62/4e/df624e69f236cc8113c5b471c8fdff84.jpg",
+      "movieName": "Tron"
+    }
+  ];
+
+//data for coming soon new arrival data
+
+  static List<Map<String, dynamic>> moviesData = [
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/f9/f4/0e/f9f40eda4f4571a5a4d4a7e0db5701cf.jpg",
+      "movieName": "The Social Network",
+      "title": "El Chapo",
+      "date": "Jan 6"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/7f/8e/ba/7f8ebabb923ba03c631c36b928cc4552.jpg",
+      "movieName": "Inception",
+      "title": "Inception",
+      "date": "Feb 14"
+    },
+    {
+      "imageUrl":
+          "https://i.pinimg.com/564x/f9/f4/0e/f9f40eda4f4571a5a4d4a7e0db5701cf.jpg",
+      "movieName": "The Social Network",
+      "title": "El Chapo",
+      "date": "Jan 6"
+    },
   ];
 }
